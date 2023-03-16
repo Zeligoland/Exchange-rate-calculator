@@ -1,0 +1,1 @@
+- In this project we worked with a third party free API called ExchangeRateAPI
