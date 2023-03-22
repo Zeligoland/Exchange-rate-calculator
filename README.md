@@ -22,6 +22,10 @@
 
 `function calculate() {fetch('items.json').then(res => res.json()).then(data => (document.body.innerHTML = data[0].text));}`
 
+- The back ticks are template literals `` with this we can insert variables.
+
+- 
+
 
 
 
