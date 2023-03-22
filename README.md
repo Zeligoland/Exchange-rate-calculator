@@ -13,3 +13,13 @@
 - If we are posting data to the server, meaning like we are filling out a form that is going to be saved in a backend database this tipically will be a POST request.
 
 - If we are updating data on a server it will be a PUT or PATCH request, if we are going to delete is a DELETE request.
+
+- With fetch API if you want the data, you have to format the function that .then receives and format it to what you want, according to the example, you want the .json information.
+
+`function calculate( {
+    fetch('items.json')
+    .then(res => res.json())
+    .then(data => console.log(data));
+})`
+
+
