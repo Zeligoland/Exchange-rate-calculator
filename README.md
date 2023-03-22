@@ -16,6 +16,15 @@
 
 - With fetch API if you want the data, you have to format the function that .then receives and format it to what you want, according to the example, you want the .json information.
 
-`function calculate( {fetch('items.json').then(res => res.json()).then(data => console.log(data));})`
+`function calculate() {fetch('items.json').then(res => res.json()).then(data => console.log(data));}`
+
+- If we want to "print" into the screen the content of the fetched .json file, we can do something like this:
+
+`function calculate() {`
+`fetch('items.json')`
+`.then(res => res.json())`
+`.then(data => (document.body.innerHTML = data[0].text))`
+`;`
+`}`
 
 
