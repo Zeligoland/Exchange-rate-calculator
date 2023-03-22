@@ -20,11 +20,8 @@
 
 - If we want to "print" into the screen the content of the fetched .json file, we can do something like this:
 
-`function calculate() {`
-`fetch('items.json')`
-`.then(res => res.json())`
-`.then(data => (document.body.innerHTML = data[0].text))`
-`;`
-`}`
+`function calculate() {fetch('items.json').then(res => res.json()).then(data => (document.body.innerHTML = data[0].text));}`
+
+
 
 
